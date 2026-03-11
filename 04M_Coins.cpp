@@ -10,8 +10,8 @@ string Method_Count(int k,int l,int mx)
     dp[l] = 1;
     for(int n=2;n<=mx;n++)
     {
-        if(i==k ||i==l)continue;
-        bool flag = flag=true;
+        if(n==k ||n==l)continue;
+        bool flag = true;
         if(n-l>=0 && dp[n-l]==0)flag = false;
         if(n-k>=0 && dp[n-k]==0)flag = false;
         if(n-1>=0 && dp[n-1]==0)flag = false;
